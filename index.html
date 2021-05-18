@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <!-- Required meta tags -->
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
-    <!-- Bootstrap CSS -->
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <title>Mon Portofolio</title>
@@ -16,26 +16,37 @@
 <div class="container-fluid fixed-top bg-white">
     
 
-    <div class="container-fluid ">
-      <nav class="navbar ">
+    <div class="container-fluid menu">
+      <nav class="navbar navbar-expand-lg fixed-top bg-white navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="Images/logo.png" alt="" width="60" height="48">
-          </a>
-          <ul class="nav nav-pills onglets mb-3 justify-content-end">
-            <li class="nav-item ">
-                <a class="nav-link" href="index.html">Accueil</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Apropos">A Propos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#portofolio">Portofolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contacter-Moi</a>
-            </li>
-        </ul>
+          
+        
+
+                        <button class="navbar-toggler" style=" color: #2b6e8a; font-size: 25px; border: none;" type="button" data-toggle="collapse" data-target="#navbarMenu"
+                          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                          <i class="fas fa-bars"></i>
+                        </button> 
+                        <a class="navbar-brand" href="index.html">
+                          <img src="Images/logo.png" alt="" width="60" height="48">
+                        </a>
+                        <div class="collapse  navbar-collapse justify-content-end" id="navbarMenu">
+                            <ul class="navbar-nav" id="onglets">
+                              <li class="nav-item ">
+                                <a class="nav-link" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Apropos">A Propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portofolio">Portofolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contacter-Moi</a>
+                            </li>
+                            </ul>
+                        </div> 
+                          
+
         </div>
       </nav>
       
@@ -55,7 +66,7 @@
         </h1>
     </div>
 
-    <div class="container-fluid bg-info pb-5" id="Apropos">
+    <div class="container-fluid justify-content-center pt-5 bg-info pb-5" id="Apropos">
         <div class="container resume text-center pt-5">
             <h2 >
                 Salut, je suis Alioune Badara NDIAYE. Ravi de vous rencontrer.
@@ -65,8 +76,8 @@
             </p>
         </div>
         <div class="container moi">
-            <div class="row">
-                <div class="col-sm-4">
+            <div class="row justify-content-center">
+                <div class="col-sm-6">
                   <div class="card card1 text-center">
                     <div class="card-body">
                         <img src="Images/dessigner.png" class="card-img-top" alt="..."> 
@@ -95,7 +106,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                   <div class="card text-center">
                     <div class="card-body">
                         <img src="Images/codeur.png" class="card-img-top" alt="...">
@@ -123,7 +134,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div class="card text-center">
                       <div class="card-body">
                         <img src="Images/codeur.png" class="card-img-top" alt="...">
@@ -156,7 +167,7 @@
         </div>
         
     </div>
-    <div class="container travail text-center pt-3 my-5" id="portofolio">
+    <div class="container travail text-center  my-5" id="portofolio">
         <h2 style="margin-bottom: 20px;">Mes Réalisations récentes</h2>
         <div class="row justify-content-center mb-5 " style="margin-left: 20px;">
             <div class="col-md-4" >
@@ -254,7 +265,7 @@
             </button>
           </div>
     </div>
-    <div class="container-fluid ">
+    <div class="container-fluid pt-5 " id="contact">
       <div class="container" id="contact">
         <div class="row">
           <div class="col-md-6">
@@ -317,22 +328,21 @@
             
         </ul>
         <p class="pfooter fw-bold  mb-5 ">
-          &copy;   Fabriqué à la main par moi!
+          &copy;  Copyright Alioune Badara NDIAYE <br>Designed by Alioune Badara NDIAYE
         </p>
+        <a class="gototopbtn rounded-circle" href="#"><i class="fas fa-chevron-up"></i></a>
     </footer>
 
     
 
     
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    -->
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
